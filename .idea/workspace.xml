@@ -15,6 +15,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" show_ignored="true" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -170,6 +171,7 @@
       <workItem from="1648994572939" duration="8906000" />
       <workItem from="1649003513560" duration="1713000" />
       <workItem from="1649005342317" duration="300000" />
+      <workItem from="1649005755520" duration="831000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1649005394754</created>
@@ -199,7 +201,21 @@
       <option name="project" value="LOCAL" />
       <updated>1649005474638</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="First commit">
+      <created>1649005967795</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1649005967795</updated>
+    </task>
+    <task id="LOCAL-00006" summary="First commit">
+      <created>1649005978627</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1649005978627</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
