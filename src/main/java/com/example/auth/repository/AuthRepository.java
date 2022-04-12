@@ -15,6 +15,7 @@ public class AuthRepository {
     private static final String CHECK_AUTH = "select * from users where login = ? and password = ?";
 
     private static Connection connection;
+
     static {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -40,5 +41,4 @@ public class AuthRepository {
         }
         return result;
     }
-
 }

@@ -22,4 +22,13 @@
         <url-pattern>/reg</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>EndJSP</servlet-name>
+        <jsp-file>/jsp/end.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EndJSP</servlet-name>
+        <url-pattern>/end</url-pattern>
+    </servlet-mapping>
+
 </web-app>

@@ -21,8 +21,7 @@ public class AuthServlet extends HttpServlet {
         boolean isAuth = AuthRepository.checkAuth(login, password);
 
         if (isAuth) {
-            RequestDispatcher requestDispatcher = getServletContext().getRequestDispatcher("/items");
-            requestDispatcher.forward(req, resp);
+            resp.sendRedirect(req.getContextPath() + "/itemsServ");
         } else {
             req.setAttribute("errorMessage", "Неправильный логин или пароль!");
             getServletContext().getRequestDispatcher("/index.jsp").forward(req, resp);

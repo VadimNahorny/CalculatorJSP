@@ -9,7 +9,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="def0c9bf-01ce-45a2-b655-fb42ba3e5581" name="Changes" comment="First commit" />
+    <list default="true" id="def0c9bf-01ce-45a2-b655-fb42ba3e5581" name="Changes" comment="Second commit">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/auth/good/Good.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/auth/repository/ItemRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/auth/repository/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/auth/servlet/ItemsServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/order.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/end.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/classes/com/example/auth/good/Good.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/classes/com/example/auth/repository/ItemRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/classes/com/example/auth/repository/OrderRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/classes/com/example/auth/servlet/ItemsServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/css/order.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/jsp/end.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/auth/good/Good.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/auth/repository/ItemRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/auth/repository/OrderRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/auth/servlet/ItemsServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/auth/repository/AuthRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/auth/repository/AuthRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/auth/repository/RegistrationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/auth/repository/RegistrationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/auth/servlet/AuthServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/auth/servlet/AuthServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/items.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/items.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/classes/com/example/auth/repository/AuthRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/classes/com/example/auth/repository/AuthRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/classes/com/example/auth/repository/RegistrationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/classes/com/example/auth/repository/RegistrationRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/classes/com/example/auth/servlet/AuthServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/classes/com/example/auth/servlet/AuthServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/jsp/items.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/jsp/items.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/auth/repository/AuthRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/auth/repository/AuthRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/auth/repository/RegistrationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/auth/repository/RegistrationRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/auth/servlet/AuthServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/auth/servlet/AuthServlet.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,12 +53,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Jsp File" />
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -54,14 +91,38 @@
     <property name="ChangesTree.GroupingKeys" value="module&#10;directory" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Task_to_05.04_AuthRegServlet-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaProjectIdea\Task to 05.04 AuthRegServlet\src\main\webapp\jsp\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JavaProjectIdea\Task to 05.04 AuthRegServlet\src\main\webapp\css" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.60">
+    <configuration name="ItemRepository" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.auth.repository.ItemRepository" />
+      <module name="Auth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.auth.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.60" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.60" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -149,6 +210,11 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ItemRepository" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -172,6 +238,46 @@
       <workItem from="1649003513560" duration="1713000" />
       <workItem from="1649005342317" duration="300000" />
       <workItem from="1649005755520" duration="831000" />
+      <workItem from="1649014656264" duration="49000" />
+      <workItem from="1649014739758" duration="302000" />
+      <workItem from="1649016152940" duration="101000" />
+      <workItem from="1649021401350" duration="1064000" />
+      <workItem from="1649100818474" duration="916000" />
+      <workItem from="1649102271643" duration="1767000" />
+      <workItem from="1649104974972" duration="1233000" />
+      <workItem from="1649275451245" duration="1341000" />
+      <workItem from="1649279653039" duration="600000" />
+      <workItem from="1649351745946" duration="56000" />
+      <workItem from="1649349879345" duration="22000" />
+      <workItem from="1649508619737" duration="49000" />
+      <workItem from="1649508803582" duration="2720000" />
+      <workItem from="1649511992121" duration="144000" />
+      <workItem from="1649512230882" duration="520000" />
+      <workItem from="1649512810047" duration="395000" />
+      <workItem from="1649513221933" duration="413000" />
+      <workItem from="1649513655060" duration="1946000" />
+      <workItem from="1649516256472" duration="20000" />
+      <workItem from="1649516304301" duration="277000" />
+      <workItem from="1649516611322" duration="46000" />
+      <workItem from="1649516700718" duration="551000" />
+      <workItem from="1649517319644" duration="337000" />
+      <workItem from="1649517751216" duration="8779000" />
+      <workItem from="1649521640481" duration="403000" />
+      <workItem from="1649522147884" duration="3164000" />
+      <workItem from="1649522778435" duration="283000" />
+      <workItem from="1649519606557" duration="2211000" />
+      <workItem from="1649522679088" duration="41448000" />
+      <workItem from="1649703215831" duration="142000" />
+      <workItem from="1649703519124" duration="125000" />
+      <workItem from="1649705535487" duration="803000" />
+      <workItem from="1649706377159" duration="6956000" />
+      <workItem from="1649714082043" duration="595000" />
+      <workItem from="1649779530933" duration="3007000" />
+      <workItem from="1649783411730" duration="33000" />
+      <workItem from="1649783571951" duration="5000" />
+      <workItem from="1649784291116" duration="40000" />
+      <workItem from="1649789833208" duration="26000" />
+      <workItem from="1649790988134" duration="850000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1649005394754</created>
@@ -215,7 +321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649005978627</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="First commit">
+      <created>1649014041396</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1649014041396</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,17 +347,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/webapp/index.jsp</url>
-          <line>25</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second commit" />
   </component>
 </project>
