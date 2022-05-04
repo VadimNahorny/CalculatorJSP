@@ -1,10 +1,12 @@
 package com.example.auth.repository;
 
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.logging.Logger;
 
 public class AuthRepository {
 
@@ -16,6 +18,7 @@ public class AuthRepository {
 
     private static Connection connection;
 
+
     static {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -25,6 +28,7 @@ public class AuthRepository {
             e.printStackTrace();
         }
     }
+
 
     public static boolean checkAuth(String login, String password) {
         boolean result = false;

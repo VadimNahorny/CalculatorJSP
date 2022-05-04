@@ -9,40 +9,70 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="def0c9bf-01ce-45a2-b655-fb42ba3e5581" name="Changes" comment="Second commit">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/auth/good/Good.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/auth/repository/ItemRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/auth/repository/OrderRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/auth/servlet/ItemsServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/order.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/end.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/classes/com/example/auth/good/Good.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/classes/com/example/auth/repository/ItemRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/classes/com/example/auth/repository/OrderRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/classes/com/example/auth/servlet/ItemsServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/css/order.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/jsp/end.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/auth/good/Good.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/auth/repository/ItemRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/auth/repository/OrderRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/auth/servlet/ItemsServlet.class" afterDir="false" />
+    <list default="true" id="def0c9bf-01ce-45a2-b655-fb42ba3e5581" name="Changes" comment="First commit">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/auth/filter/AuthFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/auth/filter/RegFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/auth/service/MathOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/auth/service/OperationStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/auth/service/PasswordNameValidation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/auth/service/ProjectPath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/auth/servlet/LogoutServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/auth.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/calculator.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Auth_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Auth_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auth.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Auth.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/auth/good/Good.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/auth/service/StringValidation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/auth/repository/AuthRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/auth/repository/AuthRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/auth/repository/ItemRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/auth/repository/OrderRepository.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/auth/repository/RegistrationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/auth/repository/RegistrationRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/auth/servlet/AuthServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/auth/servlet/AuthServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/auth/servlet/ItemsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/auth/servlet/CalcServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/auth/servlet/RegistrationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/auth/servlet/RegistrationServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/items.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/items.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/classes/com/example/auth/repository/AuthRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/classes/com/example/auth/repository/AuthRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/classes/com/example/auth/repository/RegistrationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/classes/com/example/auth/repository/RegistrationRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/classes/com/example/auth/servlet/AuthServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/classes/com/example/auth/servlet/AuthServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/jsp/items.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/jsp/items.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/auth/repository/AuthRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/auth/repository/AuthRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/auth/repository/RegistrationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/auth/repository/RegistrationRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/auth/servlet/AuthServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/auth/servlet/AuthServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/order.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/calculator.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/end.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/items.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/registration.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/classes/com/example/auth/good/Good.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/classes/com/example/auth/repository/AuthRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/classes/com/example/auth/repository/CheckUniqueUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/classes/com/example/auth/repository/ItemRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/classes/com/example/auth/repository/OrderRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/classes/com/example/auth/repository/RegistrationRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/classes/com/example/auth/servlet/AuthServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/classes/com/example/auth/servlet/ItemsServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/classes/com/example/auth/servlet/RegistrationServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/lib/javax.servlet.jsp.jstl-1.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/lib/jstl-api-1.2-rev-1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-8.0.28.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/lib/protobuf-java-3.11.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/lib/servlet-api-2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/css/order.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/jsp/end.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/jsp/items.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Auth-1.0-SNAPSHOT/jsp/registration.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/auth/good/Good.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/auth/repository/AuthRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/auth/repository/CheckUniqueUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/auth/repository/ItemRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/auth/repository/OrderRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/auth/repository/RegistrationRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/auth/servlet/AuthServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/auth/servlet/ItemsServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/auth/servlet/RegistrationServlet.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,15 +83,20 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="Jsp File" />
         <option value="Class" />
-        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -93,29 +128,37 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/css" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\JavaProjectIdea\Task to 05.04 AuthRegServlet\src\main\webapp\jsp\css" />
+      <recent name="D:\JavaProjectIdea\Calculator\src\main\webapp\css" />
+      <recent name="D:\JavaProjectIdea\Calculator\target\classes" />
+      <recent name="D:\JavaProjectIdea\Calculator" />
+      <recent name="D:\JavaProjectIdea\Calculator\src\main\webapp\WEB-INF" />
+      <recent name="D:\JavaProjectIdea\Calculator\src\main\java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\JavaProjectIdea\Task to 05.04 AuthRegServlet\src\main\webapp\css" />
+      <recent name="D:\JavaProjectIdea\Calculator\src\main\resources" />
+      <recent name="D:\JavaProjectIdea\Calculator\src\main" />
+      <recent name="D:\JavaProjectIdea\Calculator" />
+      <recent name="D:\JavaProjectIdea\Calculator\src\main\java\com\example\auth" />
+      <recent name="D:\JavaProjectIdea\Calculator\src\main\java" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.60">
-    <configuration name="ItemRepository" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.auth.repository.ItemRepository" />
+    <configuration name="ProjectPath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.auth.service.ProjectPath" />
       <module name="Auth" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.auth.repository.*" />
+          <option name="PATTERN" value="com.example.auth.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -133,7 +176,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="144cfd89-38b5-459b-ae87-a1a8fecc67b3" />
+        <option name="BASE_DIRECTORY_NAME" value="c11ffc5c-6f4f-4a30-a46a-b77fa5330b5e" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -141,7 +184,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="50247" />
+        <option name="DEBUG_PORT" value="59574" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -210,9 +253,13 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.ProjectPath" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.60" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ItemRepository" />
+        <item itemvalue="Application.ProjectPath" />
       </list>
     </recent_temporary>
   </component>
@@ -277,7 +324,62 @@
       <workItem from="1649783571951" duration="5000" />
       <workItem from="1649784291116" duration="40000" />
       <workItem from="1649789833208" duration="26000" />
-      <workItem from="1649790988134" duration="850000" />
+      <workItem from="1649790988134" duration="1111000" />
+      <workItem from="1649793731098" duration="9000" />
+      <workItem from="1649793779377" duration="109000" />
+      <workItem from="1650123083416" duration="1560000" />
+      <workItem from="1650181401928" duration="2018000" />
+      <workItem from="1650178236201" duration="13000" />
+      <workItem from="1650178309334" duration="1373000" />
+      <workItem from="1650178667896" duration="325000" />
+      <workItem from="1650311365218" duration="3825000" />
+      <workItem from="1650315320541" duration="1340000" />
+      <workItem from="1650317274897" duration="631000" />
+      <workItem from="1650385556734" duration="668000" />
+      <workItem from="1650563953024" duration="15000" />
+      <workItem from="1650564049315" duration="13000" />
+      <workItem from="1650564081912" duration="25000" />
+      <workItem from="1650564293927" duration="18000" />
+      <workItem from="1650567395844" duration="55000" />
+      <workItem from="1650995817398" duration="208000" />
+      <workItem from="1650996073617" duration="242000" />
+      <workItem from="1650996365170" duration="24000" />
+      <workItem from="1650996492179" duration="945000" />
+      <workItem from="1650997509756" duration="2130000" />
+      <workItem from="1651000469490" duration="442000" />
+      <workItem from="1651001169293" duration="301000" />
+      <workItem from="1651001534622" duration="6105000" />
+      <workItem from="1651000557351" duration="289000" />
+      <workItem from="1651001175011" duration="166000" />
+      <workItem from="1651000450527" duration="16931000" />
+      <workItem from="1651096502229" duration="45000" />
+      <workItem from="1648764048685" duration="174000" />
+      <workItem from="1648764269424" duration="35000" />
+      <workItem from="1651097158321" duration="2000" />
+      <workItem from="1648765209663" duration="2070000" />
+      <workItem from="1648834038702" duration="96000" />
+      <workItem from="1648834306059" duration="2554000" />
+      <workItem from="1651172708866" duration="621000" />
+      <workItem from="1648840630767" duration="3001000" />
+      <workItem from="1648846469616" duration="2923000" />
+      <workItem from="1648849945667" duration="8218000" />
+      <workItem from="1651256111868" duration="2542000" />
+      <workItem from="1651255501961" duration="4039000" />
+      <workItem from="1649182408241" duration="333000" />
+      <workItem from="1648837236934" duration="2000" />
+      <workItem from="1648837293432" duration="31000" />
+      <workItem from="1648837963410" duration="249000" />
+      <workItem from="1651268298741" duration="7059000" />
+      <workItem from="1651323665666" duration="96000" />
+      <workItem from="1651323793837" duration="32454000" />
+      <workItem from="1651407784478" duration="16005000" />
+      <workItem from="1651429477769" duration="7239000" />
+      <workItem from="1651441020469" duration="2053000" />
+      <workItem from="1651517011519" duration="8308000" />
+      <workItem from="1651525591703" duration="4917000" />
+      <workItem from="1651570074624" duration="9010000" />
+      <workItem from="1651579191840" duration="23978000" />
+      <workItem from="1651692873954" duration="10958000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1649005394754</created>
@@ -328,11 +430,21 @@
       <option name="project" value="LOCAL" />
       <updated>1649014041396</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Second commit">
+      <created>1649791946459</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1649791946459</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -349,5 +461,15 @@
     <MESSAGE value="First commit" />
     <MESSAGE value="Second commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Second commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NumberFormatException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

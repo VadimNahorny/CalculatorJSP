@@ -2,6 +2,7 @@ package com.example.auth.servlet;
 
 import com.example.auth.repository.CheckUniqueUser;
 import com.example.auth.repository.RegistrationRepository;
+import org.omg.CORBA.INVALID_ACTIVITY;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -11,13 +12,18 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "registrationServlet", value = "/registration")
+@WebServlet(name = "registration", value = "/registration")
 public class RegistrationServlet extends HttpServlet {
+    private static final String INVALID_DATA = "Введенные данные не соответствуют правилам. Логин должен содержать" +
+            " не менее 3 символов, пароль - не менее 6; пароль не должен содержать специальных символов";
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.getServletContext().getRequestDispatcher("/jsp/registration.jsp").forward(req, resp);
+    }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.setContentType("text/html");
-
         String login = req.getParameter("login");
         String password = req.getParameter("password");
         String new_user = req.getParameter("new_user");
@@ -35,6 +41,11 @@ public class RegistrationServlet extends HttpServlet {
                 requestDispatcher1.forward(req, resp);
             } else if (isRegistered == 2) {
                 req.setAttribute("errorMessage", "Проблемы при регистрации!");
+                RequestDispatcher requestDispatcher2 = getServletContext().getRequestDispatcher("/jsp/registration.jsp");
+                requestDispatcher2.forward(req, resp);
+
+        } else if (isRegistered == 3) {
+                req.setAttribute("errorMessage", INVALID_DATA);
                 RequestDispatcher requestDispatcher2 = getServletContext().getRequestDispatcher("/jsp/registration.jsp");
                 requestDispatcher2.forward(req, resp);
             }

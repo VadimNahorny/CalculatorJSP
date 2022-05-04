@@ -1,5 +1,7 @@
 package com.example.auth.repository;
 
+import com.example.auth.service.PasswordNameValidation;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -25,9 +27,9 @@ public class RegistrationRepository {
             PreparedStatement statement = connection.prepareStatement(REGISTER);
 
             if (password.equals("")|| login.equals("")||new_user==null) {
-                result = 0;
-                return result;
+                return result=0;
             }
+            if (!PasswordNameValidation.passwordNameValidation(login,password)) return result=3;
             statement.setString(1, login);
             statement.setString(2, password);
             statement.setBoolean(3, Boolean.parseBoolean(new_user));

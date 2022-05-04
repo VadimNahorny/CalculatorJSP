@@ -1,0 +1,26 @@
+.body {
+    background: lightgoldenrodyellow;
+    margin: 10% auto auto;
+    text-align: center;
+}
+
+.buttons {
+    position: fixed;
+    top: 42%;
+    left: 44%;
+}
+
+.previousOperations {
+    width: 20%;
+    position: relative;
+    float: left;
+    left: 5%;
+}
+
+.logout {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+

@@ -4,31 +4,54 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
-    <servlet>
-        <servlet-name>items</servlet-name>
-        <jsp-file>/jsp/items.jsp</jsp-file>
-    </servlet>
+    <filter-mapping>
+        <filter-name>authFilter</filter-name>
+       <servlet-name>authServ</servlet-name>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>authFilter</filter-name>
+        <servlet-name>calculator</servlet-name>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>regFilter</filter-name>
+        <servlet-name>registration</servlet-name>
+    </filter-mapping>
+
+
+<!--    <servlet>-->
+<!--        <servlet-name>calculator</servlet-name>-->
+<!--        <jsp-file>/jsp/calculator.jsp</jsp-file>-->
+<!--    </servlet>-->
     <servlet-mapping>
-        <servlet-name>items</servlet-name>
-        <url-pattern>/items</url-pattern>
+        <servlet-name>calculator</servlet-name>
+        <url-pattern>/calculator</url-pattern>
     </servlet-mapping>
 
-    <servlet>
-        <servlet-name>registrationJSP</servlet-name>
-        <jsp-file>/jsp/registration.jsp</jsp-file>
-    </servlet>
+<!--    <servlet>-->
+<!--        <servlet-name>authServ</servlet-name>-->
+<!--        <jsp-file>/jsp/auth.jsp</jsp-file>-->
+<!--    </servlet>-->
     <servlet-mapping>
-        <servlet-name>registrationJSP</servlet-name>
-        <url-pattern>/reg</url-pattern>
+        <servlet-name>authServ</servlet-name>
+        <url-pattern>/authServ</url-pattern>
     </servlet-mapping>
 
-    <servlet>
-        <servlet-name>EndJSP</servlet-name>
-        <jsp-file>/jsp/end.jsp</jsp-file>
-    </servlet>
+
+<!--    <servlet>-->
+<!--        <servlet-name>registration</servlet-name>-->
+<!--        <jsp-file>/jsp/registration.jsp</jsp-file>-->
+<!--    </servlet>-->
     <servlet-mapping>
-        <servlet-name>EndJSP</servlet-name>
-        <url-pattern>/end</url-pattern>
+        <servlet-name>registration</servlet-name>
+        <url-pattern>/registration</url-pattern>
     </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>logout</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
 
 </web-app>
