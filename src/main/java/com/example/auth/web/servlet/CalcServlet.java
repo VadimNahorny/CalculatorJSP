@@ -1,7 +1,7 @@
-package com.example.auth.servlet;
+package com.example.auth.web.servlet;
 
+import com.example.auth.Entity.User;
 import com.example.auth.service.MathOperation;
-import com.example.auth.service.OperationStorage;
 import com.example.auth.service.StringValidation;
 
 import javax.servlet.RequestDispatcher;
@@ -12,8 +12,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "calculator", value= "/calculator")
-    public class CalcServlet extends HttpServlet {
+import static com.example.auth.Repository.OperationRepository.InMemoryOperationStorage.getInMemoryOperationStorage;
+
+@WebServlet(name = "calculator", value = "/calculator")
+public class CalcServlet extends HttpServlet {
     private static final String LAST_OPERAND = "Введенное Вами выражение недопустимо: операнд не может быть последним.";
     private static final String INCORRECT_BRACKETS = "Введенное Вами выражение недопустимо: неправильно расставлены скобки.";
     private static final String LAST_POINT = "Введенное Вами выражение недопустимо: точка не может быть последней.";
@@ -25,6 +27,7 @@ import java.io.IOException;
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.getServletContext().getRequestDispatcher("/jsp/calculator.jsp").forward(req, resp);
     }
+
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 
@@ -52,7 +55,6 @@ import java.io.IOException;
         } else {
             double result = MathOperation.calc(task);
 
-
             if (String.valueOf(result).equals("Infinity")) {
                 request.setAttribute("errorMessage", ARITHMETIC_EXCEPTION);
                 request.setAttribute("mathExpression", task);
@@ -61,9 +63,9 @@ import java.io.IOException;
             } else {
                 request.setAttribute("mathExpression", result);
                 String fullExpression = task + " = " + result;
-                request.setAttribute("previousOperations", OperationStorage.workWithStorage(request,response,fullExpression));
-                RequestDispatcher requestDispatcher = getServletContext().getRequestDispatcher("/jsp/calculator.jsp");
-                requestDispatcher.forward(request, response);
+                getInMemoryOperationStorage().addOperation(((User) request.getSession().getAttribute("user")).getLogin(), fullExpression);
+                request.setAttribute("previousOperations",  getInMemoryOperationStorage().getOperationsList(((User) request.getSession().getAttribute("user")).getLogin()));
+                getServletContext().getRequestDispatcher("/jsp/calculator.jsp").forward(request, response);
             }
         }
     }

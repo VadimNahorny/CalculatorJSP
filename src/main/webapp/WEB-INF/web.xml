@@ -6,7 +6,7 @@
 
     <filter-mapping>
         <filter-name>authFilter</filter-name>
-       <servlet-name>authServ</servlet-name>
+        <servlet-name>authServ</servlet-name>
     </filter-mapping>
 
     <filter-mapping>
@@ -15,34 +15,20 @@
     </filter-mapping>
 
     <filter-mapping>
-        <filter-name>regFilter</filter-name>
+        <filter-name>authFilter</filter-name>
         <servlet-name>registration</servlet-name>
     </filter-mapping>
 
-
-<!--    <servlet>-->
-<!--        <servlet-name>calculator</servlet-name>-->
-<!--        <jsp-file>/jsp/calculator.jsp</jsp-file>-->
-<!--    </servlet>-->
     <servlet-mapping>
         <servlet-name>calculator</servlet-name>
         <url-pattern>/calculator</url-pattern>
     </servlet-mapping>
 
-<!--    <servlet>-->
-<!--        <servlet-name>authServ</servlet-name>-->
-<!--        <jsp-file>/jsp/auth.jsp</jsp-file>-->
-<!--    </servlet>-->
     <servlet-mapping>
         <servlet-name>authServ</servlet-name>
         <url-pattern>/authServ</url-pattern>
     </servlet-mapping>
 
-
-<!--    <servlet>-->
-<!--        <servlet-name>registration</servlet-name>-->
-<!--        <jsp-file>/jsp/registration.jsp</jsp-file>-->
-<!--    </servlet>-->
     <servlet-mapping>
         <servlet-name>registration</servlet-name>
         <url-pattern>/registration</url-pattern>

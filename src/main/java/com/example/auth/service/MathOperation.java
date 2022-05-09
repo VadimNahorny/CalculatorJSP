@@ -107,9 +107,9 @@ public class MathOperation {
             twoFigure.add(Double.parseDouble(matcher.group()));
         }
         if (mathExpression.contains("/")) {
-            result = twoFigure.get(0) / twoFigure.get(1);
+            result = divOperation(twoFigure.get(0), twoFigure.get(1));
         } else if (mathExpression.contains("*")) {
-            result = twoFigure.get(0) * twoFigure.get(1);
+            result = multOperation(twoFigure.get(0), twoFigure.get(1));
         }
         String resultString = String.valueOf(result);
         if (result > 0) {
@@ -120,6 +120,10 @@ public class MathOperation {
 
     private static double plSubOperation(String mathExpression) {
         mathExpression = clearString(mathExpression);
+        if (mathExpression.matches("\\(-?\\d+\\.?\\d*\\)"))
+            return Double.parseDouble(mathExpression.substring(1, mathExpression.length() - 1));
+        if (mathExpression.matches("[-+]?\\d+\\.?\\d*"))
+            return Double.parseDouble(mathExpression);
         StringBuffer figure = new StringBuffer("");
         double result = 0;
         char operation = 0;
@@ -138,11 +142,14 @@ public class MathOperation {
                 } else {
                     switch (operation) {
                         case '-':
-                            result = result - Double.parseDouble(String.valueOf(figure));
+                            float a = (float) subOperation(result, Double.parseDouble(String.valueOf(figure)));
+                            String b = String.valueOf(a);
+                            result = Double.parseDouble(b);
                             break;
                         case '+':
-                            result = result + Double.parseDouble(String.valueOf(figure));
-                            break;
+                            float a1 = (float) plusOperation(result, Double.parseDouble(String.valueOf(figure)));
+                            String b1 = String.valueOf(a1);
+                            result = Double.parseDouble(b1);
                     }
                 }
                 operation = mathExpression.charAt(i);
@@ -152,14 +159,32 @@ public class MathOperation {
                 figure.append(mathExpression.charAt(i));
                 switch (operation) {
                     case '-':
-                        result = result - Double.parseDouble(String.valueOf(figure));
+                        float a = (float) subOperation(result, Double.parseDouble(String.valueOf(figure)));
+                        String b = String.valueOf(a);
+                        result = Double.parseDouble(b);
                         break;
                     case '+':
-                        result = result + Double.parseDouble(String.valueOf(figure));
+                        float a1 = (float) plusOperation(result, Double.parseDouble(String.valueOf(figure)));
+                        String b1 = String.valueOf(a1);
+                        result = Double.parseDouble(b1);
                         break;
                 }
             } else figure.append(mathExpression.charAt(i));
         }
         return result;
+    }
+
+    private static double plusOperation(double a, double b) {
+        return a+b;
+    }
+
+    private static double subOperation(double a, double b) {
+        return a-b;
+    }
+    private static double divOperation(double a, double b) {
+        return a/b;
+    }
+    private static double multOperation(double a, double b) {
+        return a*b;
     }
 }

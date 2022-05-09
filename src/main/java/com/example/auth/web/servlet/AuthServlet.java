@@ -1,6 +1,6 @@
-package com.example.auth.servlet;
+package com.example.auth.web.servlet;
 
-import com.example.auth.repository.AuthRepository;
+import com.example.auth.Entity.User;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -8,9 +8,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
+import static com.example.auth.Repository.UserRepository.AuthRepository.checkAuth;
 import static com.example.auth.service.ProjectPath.setPropertyPath;
 
 
@@ -27,16 +27,12 @@ public class AuthServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String login = req.getParameter("login");
-        String password = req.getParameter("password");
-        boolean isAuth = AuthRepository.checkAuth(login, password);
-        if (isAuth) {
-            setPropertyPath(req,resp);
-            logger.info(FOR_LOG + login + ";");
-            final HttpSession session = req.getSession();
-            req.getSession().setAttribute("password", password);
-            req.getSession().setAttribute("login", login);
-            req.getServletContext().getRequestDispatcher("/jsp/calculator.jsp").forward(req, resp);
+       User user = new User(req.getParameter("login"), req.getParameter("password"));
+       if (checkAuth(user.getLogin(), user.getPassword())) {
+            setPropertyPath(req, resp);
+            logger.info(FOR_LOG + user.getLogin() + ";");
+            req.getSession().setAttribute("user", user);
+            resp.sendRedirect(req.getContextPath() + "/calculator");
         } else {
             req.setAttribute("errorMessage", "Неправильный логин или пароль!");
             req.getServletContext().getRequestDispatcher("/jsp/auth.jsp").forward(req, resp);
